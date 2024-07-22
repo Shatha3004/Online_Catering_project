@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+    <title>loginsite</title>
+    <link rel="icon" href="pic/l1.png">
+</head>
+<body>
+   
+    <div class="wrapper">
+    
+        <form action="">
+            <h1>Login</h1>
+            <div class="boxes">
+                <input type="text" placeholder="User name" required>
+                <i class='bx bxs-user'></i>
+
+            </div>
+            <div class="boxes">
+                <input type="password" placeholder="Password" id="pass" required>
+                <i class='bx bxs-lock-alt' ></i>    
+                
+
+            </div>
+            <div class="remember">
+                <label><input type="checkbox" id="show">Show Password</label>
+                <a href="#">Forgot password?</a>
+            </div>
+                <a href="main.html" class="button" id="login">Login</a>
+                <div class="register">
+                    <p>Don't have an account  | <a href ="signup.html">User </a><a href="caterersignup.html">|  Caterer</a></p>
+                </div>
+            
+        </form>
+
+    </div>
+   
+</body>
+<script>
+    //show password
+    var pass=document.getElementById("pass")
+    var show=document.getElementById("show")
+
+    show.addEventListener("click",function()
+{
+    if(show.checked)
+    {
+        pass.type="text"
+    }
+    else{
+        pass.type="password"
+    }
+})
+
+
+//alert
+
+var login=document.getElementById("login")
+login.addEventListener("click",function()
+{
+    alert("Successfully login")
+})
+
+</script>
+</html>

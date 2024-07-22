@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catering</title>
+   
+    <link rel="icon" href="pic/h.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+   <link rel="stylesheet" href="main.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body>
+    
+    <nav>
+        
+        <div class="nav" id="home">
+            
+            <div class="navbar">
+                <h2 class="heading1">Catering Consultancy</h2>
+                <ul class="u">
+                    <li class="l"><a href="#aboutus" >Aboutus</a></li>
+                    <li class="l"><a href="#caters">Details</a></li>
+                    <li class="l"><a href="#services">Services</a></li>
+                    <li class="l"><a href="#contact">contact us</a></li>
+                    <li class="l"><a href="login.html" class="login" >login</a></li>
+                </ul>
+            </div>
+            
+                     <div class="welcome">
+                          <span class="weltext">WELCOME</span>
+                     </div>
+                     
+                     
+                     
+            <div class="searchBox">
+                <input class="searchInput" type="text" name="" placeholder="Search">
+                <button class="searchButton" href="#">
+                    <i class="material-icons">
+                        S
+                    </i>
+                </button>
+            </div>
+        </div>
+    </nav> 
+
+
+
+    <div class="services" id="services">
+       <h1 style="text-align: center; color: rgb(0, 0, 0); ">SERVICES </h1> 
+        <div class="events" data-aos="fade-up-right" data-aos-duration="4000">
+           <img src="pic/w.jpg  " alt="" class="img1">
+            <p style="text-align: center; font-size: 25PX; font-weight: bold; margin-top: 10px;">WEDDING</p>
+            <p style="text-align: center; font-size: 20pX;  margin-top: 30px;">Elevate your wedding experience with exquisite cuisine crafted with love and attention to detail by our expert team.</p>
+            <button class="enq" role="button"  onclick="show1()">Enquirenow</button>
+        </div>
+        <div class="events" data-aos="fade-up-right" data-aos-duration="4000" >
+            <img src="pic/c.webp" alt="" class="img1">
+            <p style="text-align: center; font-size: 25PX; font-weight: bold; margin-top: 10px;">CORPORATE EVENTS</p>
+            <p style="text-align: center; font-size: 20pX;  margin-top: 30px; ">Impress your guests and colleagues alike with our seamless corporate event catering and impeccable service. </p>
+            <button class="enq" role="button" onclick="show2()">Enquirenow</button>
+        </div>
+        <div class="events" data-aos="fade-up-left" data-aos-duration="4000">
+            <img src="pic/p2.webp" alt="" class="img1">
+            <p style="text-align: center; font-size: 25PX; font-weight: bold; margin-top: 10px;">PRIVATE PARTIES</p>
+            <p style="text-align: center; font-size: 20pX;  margin-top: 30px;">Elevate your private gatherings with our personalized event planning and exquisite culinary offerings, making every celebration truly special. </p>
+            <button class="enq" role="button" onclick="show3()">Enquirenow</button>
+        </div>
+        <div class="events" data-aos="fade-up-left" data-aos-duration="4000">
+            <img src="pic/p1.webp" alt="" class="img1">
+            <p style="text-align: center; font-size: 25PX; font-weight: bold; margin-top: 10px;">BIRTHDAY EVENTS</p>
+            <p style="text-align: center; font-size: 20pX;  margin-top: 30px;">Elevate your private gatherings with our personalized event planning and exquisite culinary offerings, making every celebration truly special. </p>
+             <button class="enq" role="button" onclick="show4()">Enquirenow</button>
+        </div>
+    </div>
+
+
+    <!-- services detail overlay -->
+
+<div class="overlay"></div>
+<div class="first-box" id="first">
+    <div class="detail"><p><i class='bx bxs-star s'></i>we make sure to make your wedding more memorable by serving the best food to your and your guests</p>
+         <p><i class='bx bxs-star s1'></i>Crafting culinary dreams into reality, our wedding catering elevates every moment of your special day. From exquisite hors d'oeuvres to decadent desserts, our menus reflect your unique love story. With meticulous attention to detail and a passion for perfection, we ensure your celebration is a feast for the senses. Trust us to turn your wedding day into an unforgettable culinary experience.
+        </p>
+        <button id="Done1" onclick="hide1()">Done</button>
+    </div>
+</div>
+
+
+
+<div class="second-box" id="second">
+    <div class="detail"><p><i class='bx bxs-star s'></i>we make sure to make your wedding more memorable by serving the best food to your and your guests</p>
+         <p><i class='bx bxs-star s1'></i> Elevate your corporate events with our tailored solutions, blending professionalism with unforgettable experiences. From impeccable catering to seamless logistics, we handle every detail to ensure your event is a success. Trust our expertise to impress your guests and colleagues alike, leaving a lasting impression that reflects your company's values. Let us transform your vision into a reality, creating memorable moments that drive your business forward.
+
+        </p>
+        <button id="Done2" onclick="hide2()">Done</button>
+    </div>
+</div>
+   
+
+<div class="third-box" id="third">
+    <div class="detail"><p><i class='bx bxs-star s'></i>we make sure to make your wedding more memorable by serving the best food to your and your guests</p>
+         <p><i class='bx bxs-star s1'></i> Turn your private party into an extraordinary event with our bespoke services tailored just for you. From intimate gatherings to lavish affairs, we cater to your every need and desire. Let us handle the details while you enjoy unforgettable moments with your loved ones. With our expertise and passion, your private event will be one to remember.
+
+        </p>
+        <button id="Done3" onclick="hide3()">Done</button>
+    </div>
+</div>
+
+
+<div class="fourth-box" id="fourth">
+    <div class="detail"><p><i class='bx bxs-star s'></i>we make sure to make your wedding more memorable by serving the best food to your and your guests</p>
+         <p><i class='bx bxs-star s1'></i> Make your birthday unforgettable with our event services designed to celebrate your uniqueness. Whether you're turning one or one hundred, we believe every birthday deserves to be celebrated in style. From themed decorations to personalized menus, we tailor every aspect of your party to reflect your personality and preferences. 
+
+        </p>
+        <button id="Done4" onclick="hide4()">Done</button>
+    </div>
+</div>
+
+
+
+
+
+     <div class="caters" id="caters">
+           <div class="background"></div>
+
+        <h1>TOP CATERS</h1>
+        <div class="details" data-aos="fade-up">
+               <h1 class="d1">Bhimaa Catering & Wedding Planners</h1>
+               <img src="pic/logo1.jpg" alt="" class="first">
+               <h2 class="t">Rating</h2>
+               <div class="star">
+                <span class='bx bxs-star'></span>
+                <span class='bx bxs-star'></span>
+                <span class='bx bxs-star'></span>
+                <span class='bx bxs-star-half' ></span>
+                <span class='bx bx-star' ></span></div>
+                    
+                <p class="veri"><i class='bx bxs-checkbox-checked' ></i></p>
+                <p class="verify">Verified</p>
+                <p class="zap"><i class='bx bxs-zap' ></i></p>
+                <p class="responsive">Responsive</p>
+                
+                <div class="information"> 
+                    <p class="call"> <i class='bx bxs-phone' > </i> 0123456308 </p>
+                    <p class="enquiry"> <i class='bx bxl-telegram' > </i>Send Enquiry</p>
+                    <p class="chat "><i class='bx bxs-chat' ></i>Chat</p>
+                    
+                    
+                 </div>    
+                
+                 <div class="location"> <i class='bx bxs-map'></i>
+                    <p>Pollachi,Tamilnadu</p></div>
+            
+        </div>
+        <div class="details" data-aos="fade-up">
+               <h1 class="d2">Sri Maha Catering Service</h1>
+               <img src="pic/log06.jpeg" alt="" class="first">
+               <h2 class="t">Rating</h2>
+               <div class="star">
+                <span class='bx bxs-star'></span>
+                <span class='bx bxs-star'></span>
+                <span class='bx bxs-star'></span>
+                <span class='bx bxs-star-half' ></span>
+                <span class='bx bx-star' ></span></div>
+
+                <p class="veri"><i class='bx bxs-checkbox-checked' ></i></p>
+                <p class="verify">Verified</p>
+                <p class="zap"><i class='bx bxs-zap' ></i></p>
+                <p class="responsive">Responsive</p>
+                
+                <div class="information"> 
+                    <p class="call"> <i class='bx bxs-phone' > </i> 0123456308 </p>
+                    <p class="enquiry"> <i class='bx bxl-telegram' > </i>Send Enquiry</p>
+                    <p class="chat "><i class='bx bxs-chat' ></i>Chat</p>
+                    
+                    
+                 </div>
+                 <div class="location"> <i class='bx bxs-map'></i>
+                    <p>Pollachi,Tamilnadu</p></div>
+        </div>
+
+
+        <div class="details" data-aos="fade-up">
+            <h1 class="d3">Rathna Catering Service</h1>
+            <img src="pic/logo2.jpg" alt="" class="first">
+            <h2 class="t">Rating</h2>
+            <div class="star">
+             <span class='bx bxs-star'></span>
+             <span class='bx bxs-star'></span>
+             <span class='bx bxs-star'></span>
+             <span class='bx bxs-star-half' ></span>
+             <span class='bx bx-star' ></span></div>
+
+             <p class="veri"><i class='bx bxs-checkbox-checked' ></i></p>
+             <p class="verify">Verified</p>
+             <p class="zap"><i class='bx bxs-zap' ></i></p>
+             <p class="responsive">Responsive</p>
+             
+             <div class="information"> 
+                 <p class="call"> <i class='bx bxs-phone' > </i> 0123456308 </p>
+                 <p class="enquiry"> <i class='bx bxl-telegram' > </i>Send Enquiry</p>
+                 <p class="chat "><i class='bx bxs-chat' ></i>Chat</p>
+                 
+                 
+              </div>
+              <div class="location"> <i class='bx bxs-map'></i>
+                <p>Pollachi,Tamilnadu</p></div>
+        </div>
+
+
+
+        <div class="details" data-aos="fade-up">
+            <h1 class="d4">Anandham Atoz Catering Service </h1>
+            <img src="pic/logo4.jpeg" alt="" class="first">
+            <h2 class="t">Rating</h2>
+            <div class="star">
+             <span class='bx bxs-star'></span>
+             <span class='bx bxs-star'></span>
+             <span class='bx bxs-star'></span>
+             <span class='bx bxs-star-half' ></span>
+             <span class='bx bx-star' ></span></div>
+
+             <p class="veri"><i class='bx bxs-checkbox-checked' ></i></p>
+             <p class="verify">Verified</p>
+             <p class="zap"><i class='bx bxs-zap' ></i></p>
+             <p class="responsive">Responsive</p>
+             
+             <div class="information"> 
+                 <p class="call"> <i class='bx bxs-phone' > </i> 0123456308 </p>
+                 <p class="enquiry"> <i class='bx bxl-telegram' > </i>Send Enquiry</p>
+                 <p class="chat "><i class='bx bxs-chat' ></i>Chat</p>
+                 
+                 
+              </div>
+              <div class="location"> <i class='bx bxs-map'></i>
+                <p>Pollachi,Tamilnadu</p></div>
+        </div>
+
+
+
+        <div class="details" data-aos="fade-up">
+            <h1 class="d5">Jaya Stores and Catering</h1>
+            <img src="pic/logo5.jpeg" alt="" class="first">
+            <h2 class="t">Rating</h2>
+            <div class="star">
+             <span class='bx bxs-star'></span>
+             <span class='bx bxs-star'></span>
+             <span class='bx bxs-star'></span>
+             <span class='bx bxs-star-half' ></span>
+             <span class='bx bx-star' ></span></div>
+
+             <p class="veri"><i class='bx bxs-checkbox-checked' ></i></p>
+             <p class="verify">Verified</p>
+             <p class="zap"><i class='bx bxs-zap' ></i></p>
+             <p class="responsive">Responsive</p>
+             
+             <div class="information"> 
+                 <p class="call"> <i class='bx bxs-phone' > </i> 0123456308 </p>
+                 <p class="enquiry"> <i class='bx bxl-telegram' > </i>Send Enquiry</p>
+                 <p class="chat "><i class='bx bxs-chat' ></i>Chat</p>
+                 
+                 
+              </div>
+              <div class="location"> <i class='bx bxs-map'></i>
+                <p>Pollachi,Tamilnadu</p></div>
+        </div>
+
+
+
+        <div class="details" data-aos="fade-up">
+            <h1 class="d6">Royal Caterers and Event Management</h1>
+            <img src="pic/logo3.jpeg" alt="" class="first">
+            <h2 class="t">Rating</h2>
+            <div class="star">
+             <span class='bx bxs-star'></span>
+             <span class='bx bxs-star'></span>
+             <span class='bx bxs-star'></span>
+             <span class='bx bxs-star-half' ></span>
+             <span class='bx bx-star' ></span></div>
+
+             <p class="veri"><i class='bx bxs-checkbox-checked' ></i></p>
+             <p class="verify">Verified</p>
+             <p class="zap"><i class='bx bxs-zap' ></i></p>
+             <p class="responsive">Responsive</p>
+             
+             <div class="information"> 
+                 <p class="call"> <i class='bx bxs-phone' > </i> 0123456308 </p>
+                 <p class="enquiry"> <i class='bx bxl-telegram' > </i>Send Enquiry</p>
+                 <p class="chat "><i class='bx bxs-chat' ></i>Chat</p>
+                 
+                 
+              </div>
+              <div class="location"> <i class='bx bxs-map'></i>
+                <p>Pollachi,Tamilnadu</p></div>
+        </div>
+        
+     </div>
+
+
+     <a href="index.html" class="mored" target="_blank ">MORE</a>
+
+
+     <div class="aboutus" id="aboutus">
+        <h1>ABOUTUS</h1>
+        <div class="info">
+            <p>Filling every occasion with great food and service. We dummy company, situated at area, city, state are known for providing truly exquisite cuisine accompanied by dedicated service. We give our customers the option of choosing from a packaged catering menu or a customized menu. We deliver world class dining experience and to suit everyone's taste, we offer a wide range of cuisines with a menu boasting of many delicacies across global cuisines.</p></div>
+        <div class="info infopic">
+       
+        </div>
+     </div>
+
+
+
+   <div class="contactus" id="contact">
+    <div class="whole">
+        <!--for information of contacts-->
+            <div class="contact">
+                
+                <h1 >
+                    Contact us
+                </h1>
+
+             <div class="display">
+
+            <div class="box">
+                 <div class="ico">
+                    <div class="icon"><i class='bx bxs-map'></i></div>
+                </div>
+                    
+                        <div class="text">
+                            <h5>Our office address </h5>
+                            
+                            <p>MCET CAMPUS, <br> Udumalai Road ,<br>Pollachi-642003. </p>
+                        
+                         </div>
+            </div>
+
+            <div class="box">
+                <div class="ico">
+                    <div class="icon"><i class='bx bxs-phone' ></i></div> </div>
+                    <div class="text">
+                        <h5>Phone</h5>
+                        <p> 0987654321</p>
+                    </div>
+            </div>
+
+             <div class="box">
+                    <div class="ico">
+                    <div class="icon"><i class='bx bxl-gmail' ></i></div></div>
+                    <div class="text">
+                        <h5>General enquiries</h5>
+                        <p> ccsproject486@gmail.com</p>
+                    </div>
+            </div>
+        
+             <div class="box">
+                    <div class="ico">
+                    <div class="icon"><i class='bx bxs-calendar'></i></div></div>
+                    <div class="text">
+                        
+                        <h5>Timings </h5>
+                        <p>Mon-Sun:<br>10.00AM-7.00PM</p>
+                    </div>
+            </div>
+                
+            </div>
+
+        </div>
+        <!--for text in contact inputs-->
+        <div class="texting">
+          <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="d7a2bce2-839c-4b8d-85ce-6c24ee3f517b">
+          <div class="textss">
+              <div class="boxx">
+                  <input type="text" name="Username" placeholder="Full name:" required>
+              </div>
+  
+              <div class="boxx">
+                  <input type="email" name="Email" placeholder="Email id:" required>
+              </div>
+
+              <div class="boxx">
+                  <input type="tel" name="Phone no" placeholder="Mobile number:" required>
+              </div>
+  
+          
+              <div class="mess">
+                 <textarea name="Message" placeholder="Enter the message:" rows="3" cols="170" ></textarea>
+                 
+              </div>
+              <button class="btn" role="button" style="font-family: 'Times New Roman', Times, serif;">SUBMIT</button>
+          </div>
+           </form>
+      </div>
+</div>    
+</div>   
+         
+  
+
+
+  
+  
+
+
+
+
+
+
+<div class="footer">
+  <div class="image">
+      <img src="pic/c.jpg" alt="">
+  </div>
+  <div class="quicklink">
+      <h2>Quick Links</h2>
+      
+      <a href="#home"><i class='bx bx-home'></i> Home</a>
+      <hr>
+      <a href="#services"><i class='bx bx-food-menu'></i> Serivices</a>
+      <hr>
+      <a href="#caters">  <i class='bx bx-cart'></i>Caters</a>
+      <hr>
+      <a href="#aboutus"> <i class='bx bx-question-mark' ></i>Aboutus</a>
+      <hr>
+      <a href="#contact"> <i class='bx bx-phone' ></i> contact</a>
+  </div>
+  <div class="socialcontact">
+      <h2 style="font-size: 35px;">Contact</h2>
+      <p><i class='bx bxs-location-plus' ></i> Catering Services,<br>  MCET,Pollachi,CBE</p>
+      
+      <p><i class='bx bxs-phone-call'></i> +914000030000</p>
+      <p><img src="pic/fb.webp" alt=""> CATERS</p>
+      <p><img src="pic/ins.png" alt=""> CATERS</p>
+      <p><i class='bx bxs-envelope'></i> catering2024@gamil.com</p>
+      <p><i class='bx bxs-window-alt'></i> https:/cateringserivices.com</p>
+      
+  </div>
+  <div class="image1">
+      <img src="pic/foot.jpg" alt="">
+  </div>
+ <hr class="hr">
+  <p class="copyright">Copyright © cateringservices 2015. All rights reserved.</p>
+</div>
+
+
+
+
+
+
+
+   
+</body>
+
+<script src="main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>
